@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Symptoms"
+    android:background="#FAF6D9">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingBottom="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/que1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/questions_design"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:text="Select your age group?"
+                android:textColor="#7EB63D"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/q1_ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Year 0-10"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/que1"
+                app:layout_constraintTop_toBottomOf="@+id/que1" />
+
+            <CheckBox
+                android:id="@+id/q1_ans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Year 10-18"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q1_ans1"
+                app:layout_constraintTop_toBottomOf="@+id/q1_ans1" />
+
+            <CheckBox
+                android:id="@+id/q1_ans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Year 18-40"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q1_ans2"
+                app:layout_constraintTop_toBottomOf="@+id/q1_ans2" />
+
+            <CheckBox
+                android:id="@+id/q1_ans4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="40 and above"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q1_ans3"
+                app:layout_constraintTop_toBottomOf="@+id/q1_ans3" />
+
+
+            <TextView
+                android:id="@+id/que2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/questions_design"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:text="Select your age group?"
+                android:textColor="#7EB63D"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@id/que1"
+                app:layout_constraintTop_toBottomOf="@id/q1_ans4" />
+
+            <CheckBox
+                android:id="@+id/q2_ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Year 0-10"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/que2"
+                app:layout_constraintTop_toBottomOf="@+id/que2" />
+
+            <CheckBox
+                android:id="@+id/q2_ans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Year 10-18"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q2_ans1"
+                app:layout_constraintTop_toBottomOf="@+id/q2_ans1" />
+
+            <CheckBox
+                android:id="@+id/q2_ans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Year 18-40"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q2_ans2"
+                app:layout_constraintTop_toBottomOf="@+id/q2_ans2" />
+
+            <CheckBox
+                android:id="@+id/q2_ans4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="40 and above"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q2_ans3"
+                app:layout_constraintTop_toBottomOf="@+id/q2_ans3" />
+
+            <TextView
+                android:id="@+id/que3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/questions_design"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:text="Select your age group?"
+                android:textColor="#7EB63D"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@id/que1"
+                app:layout_constraintTop_toBottomOf="@id/q2_ans4" />
+
+            <CheckBox
+                android:id="@+id/q3_ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Year 0-10"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/que3"
+                app:layout_constraintTop_toBottomOf="@+id/que3" />
+
+            <CheckBox
+                android:id="@+id/q3_ans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Year 10-18"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q3_ans1"
+                app:layout_constraintTop_toBottomOf="@+id/q3_ans1" />
+
+            <CheckBox
+                android:id="@+id/q3_ans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Year 18-40"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q3_ans2"
+                app:layout_constraintTop_toBottomOf="@+id/q3_ans2" />
+
+            <CheckBox
+                android:id="@+id/q3_ans4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="40 and above"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q3_ans3"
+                app:layout_constraintTop_toBottomOf="@+id/q3_ans3" />
+
+            <TextView
+                android:id="@+id/que4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/questions_design"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:text="Select your age group?"
+                android:textColor="#7EB63D"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@id/que1"
+                app:layout_constraintTop_toBottomOf="@id/q3_ans4" />
+
+            <CheckBox
+                android:id="@+id/q4_ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Year 0-10"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/que4"
+                app:layout_constraintTop_toBottomOf="@+id/que4" />
+
+            <CheckBox
+                android:id="@+id/q4_ans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Year 10-18"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q4_ans1"
+                app:layout_constraintTop_toBottomOf="@+id/q4_ans1" />
+
+            <CheckBox
+                android:id="@+id/q4_ans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Year 18-40"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q4_ans2"
+                app:layout_constraintTop_toBottomOf="@+id/q4_ans2" />
+
+            <CheckBox
+                android:id="@+id/q4_ans4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/option_design"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="40 and above"
+                android:textColor="#FFEB3B"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/q4_ans3"
+                app:layout_constraintTop_toBottomOf="@+id/q4_ans3" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text_design"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#F65C90"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/q4_ans4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF6D9"
+    tools:context=".Health">
+
+
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/mental_health_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mental Health"
+        android:fontFamily="@font/aclonica"
+        android:textColor="#FFC107"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/med_scv"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mental_health_text">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fbd1d4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#dda7c0"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:text="Click images to play audio"
+                android:textColor="#00695C"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/sunsent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#dda7c0"
+                app:srcCompat="@drawable/excersice" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/monk" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/med_scv"
+        app:layout_constraintTop_toBottomOf="@+id/med_scv">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fbd1d4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#dda7c0"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:text="Select your level of Yoga"
+                android:textColor="#00695C"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Beginner"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="#dda7c0"
+                android:gravity="center"
+                android:text="Intermidiate"
+                android:textColor="#616161"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Expert"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

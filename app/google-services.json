@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "752305204388",
+    "project_id": "immunity-d3f73",
+    "storage_bucket": "immunity-d3f73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752305204388:android:62db1ee8acd85d2ed3ca31",
+        "android_client_info": {
+          "package_name": "com.example.immunity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752305204388-24j9271t6htp0q9e13vvsta78u3h4m9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_PNxCtu3PB9eCksf6BWPT38ecZm5nI5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752305204388-24j9271t6htp0q9e13vvsta78u3h4m9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

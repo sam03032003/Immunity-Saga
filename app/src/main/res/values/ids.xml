@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Symptoms" type="id" />
+    <item name="q2_ans4" type="id" />
+    <item name="que4" type="id" />
+    <item name="q4_ans1" type="id" />
+    <item name="q4_ans2" type="id" />
+    <item name="q4_ans3" type="id" />
+    <item name="q4_ans4" type="id" />
+</resources>
